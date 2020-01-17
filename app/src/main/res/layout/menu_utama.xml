@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/cobamenuutama1"
+    tools:context=".Menu_Utama">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="230dp"
+        android:text="Menu Utama"
+        android:textAlignment="center"
+        android:textColor="#570D07"
+        android:textSize="36dp">
+
+    </TextView>
+
+   <Button
+       android:id="@+id/tentang"
+       android:textSize="15sp"
+       android:padding="10dp"
+       android:text="TENTANG"
+       android:textColor="#570D07"
+       android:layout_gravity="center_horizontal"
+       android:layout_marginTop="20dp"
+       android:layout_width="180dp"
+       android:layout_height="60dp">
+   </Button>
+
+    <Button
+        android:id="@+id/test"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:text="CEK"
+        android:textColor="#570D07"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp">
+    </Button>
+
+    <Button
+        android:id="@+id/saran"
+        android:textSize="15sp"
+        android:padding="10dp"
+        android:text="SARAN"
+        android:textColor="#570D07"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:layout_width="180dp"
+        android:layout_height="60dp">
+    </Button>
+
+</LinearLayout>

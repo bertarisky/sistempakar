@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtentang"
+    android:orientation="vertical"
+    tools:context=".Kesimpulan">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginRight="5dp"
+        android:text="Kesimpulan yang dapat diambil dari gejala anak anda adalah sebagai berikut"
+        android:textColor="#FF90A7"
+        android:textSize="17sp"></TextView>
+
+    <TextView
+        android:id="@+id/simpulan"
+        android:layout_marginTop="30dp"
+        android:textSize="13sp"
+        android:textColor="#570D07"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="kesimpulan"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center"></TextView>
+
+</LinearLayout>

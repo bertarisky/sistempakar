@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bgtentang"
+    android:orientation="vertical"
+    tools:context=".Menu_Layar_Dua">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="35dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="90dp"
+                android:text="Beri tanda centang pada gejala yang terjadi pada anak anda!"
+                android:textSize="17sp"
+                android:textColor="#FF90A7"></TextView>
+
+            <CheckBox
+                android:id="@+id/tinggi"
+                android:layout_marginTop="25dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tinggi badan anak dibawah rata-rata anak seusianya"
+                android:textColor="#570D07"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/porsi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Porsi tubuh cenderung normal namun terlihat lebih muda / kecil untuk anak seusianya"
+                android:textColor="#570D07"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/berat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Berat badan dibawah rata-rata anak seusianya"
+                android:textColor="#570D07"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/gizi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kurang pemberian gizi seimbang selama kehamilan"
+                android:textColor="#570D07"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/asi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anak diberi ASI Eksklusif"
+                android:textColor="#570D07"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/nafsu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anak kurang nafsu makan"
+                android:textColor="#570D07"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/sakit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anak sering sakit"
+                android:textColor="#570D07"></CheckBox>
+
+            <CheckBox
+                android:id="@+id/cacing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Anak sering cacingan"
+                android:textColor="#570D07"></CheckBox>
+
+            <Button
+                android:id="@+id/proses"
+                android:textSize="15sp"
+                android:padding="10dp"
+                android:text="PROSES"
+                android:textColor="#570D07"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_width="180dp"
+                android:layout_height="60dp"></Button>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
