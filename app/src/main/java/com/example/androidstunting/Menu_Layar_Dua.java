@@ -21,6 +21,7 @@ public class Menu_Layar_Dua extends AppCompatActivity {
             chckNafsu,
             chckSakit,
             chckCacingan;
+    String NamaPenyakit;
 
     Button btnProses;
 
@@ -49,25 +50,25 @@ public class Menu_Layar_Dua extends AppCompatActivity {
         btnProses.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent kesimpulan = new Intent (Menu_Layar_Dua.this, Kesimpulan.class);
-                startActivity(kesimpulan);
 
-                String NamaPenyakit = "";                   //String NamaPenyakit = "Anda Menderita Penyakit : ";
-
-                tvKesimpulan.setText("" + NamaPenyakit);
+                                 //String NamaPenyakit = "Anda Menderita Penyakit : ";
 
                 //jenis gejala untuk balita stunting
                 if (chckTinggi.isChecked() && chckPorsi.isChecked() && chckBerat.isChecked() && chckAsieksklusif.isChecked() && chckNafsu.isChecked() && chckSakit.isChecked()) {
-                    NamaPenyakit += "\nMasih ada waktu untuk mengejar kekurangan pada tinggi anak anda. Segera penuhi kecukupan nutrisinya";
+                    NamaPenyakit= "Masih ada waktu untuk mengejar kekurangan pada tinggi anak anda. Segera penuhi kecukupan nutrisinya";
                 }
                 if (chckTinggi.isChecked() && chckPorsi.isChecked() && chckBerat.isChecked() ) {
-                    NamaPenyakit += "\nMasih ada waktu untuk mengejar kekurangan pada tinggi anak anda. Segera penuhi kecukupan nutrisinya";
+                    NamaPenyakit= "Masih ada waktu untuk mengejar kekurangan pada tinggi anak anda. Segera penuhi kecukupan nutrisinya";
                 }
                 if (chckGizi.isChecked() && chckAsieksklusif.isChecked() && chckNafsu.isChecked() && chckSakit.isChecked()) {
-                    NamaPenyakit += "\nSegera konsultasi ke tenaga kesehatan untuk mengetahui kondisi anak anda saat ini";
+                    NamaPenyakit ="Segera konsultasi ke tenaga kesehatan untuk mengetahui kondisi anak anda saat ini";
                 }
 
                 //Tampilkan hasil nama penyakit di textview
-                tvKesimpulan.setText("" + NamaPenyakit);
+
+                Intent kesimpulan = new Intent (Menu_Layar_Dua.this, Kesimpulan.class);
+                kesimpulan.putExtra("penyakit",NamaPenyakit);
+                startActivity(kesimpulan);
+
             }});
 }}

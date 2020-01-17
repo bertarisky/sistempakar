@@ -19,7 +19,7 @@
         android:textSize="17sp"></TextView>
 
     <TextView
-        android:id="@+id/simpulan"
+        android:id="@+id/kesimpulan"
         android:layout_marginTop="30dp"
         android:textSize="13sp"
         android:textColor="#570D07"

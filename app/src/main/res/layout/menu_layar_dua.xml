@@ -20,21 +20,22 @@
             android:orientation="vertical">
 
             <TextView
-                android:layout_marginTop="35dp"
+                android:id="@+id/simpulan"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textAlignment="center"
-                android:layout_marginRight="5dp"
                 android:layout_marginLeft="90dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginRight="5dp"
                 android:text="Beri tanda centang pada gejala yang terjadi pada anak anda!"
-                android:textSize="17sp"
-                android:textColor="#FF90A7"></TextView>
+                android:textAlignment="center"
+                android:textColor="#FF90A7"
+                android:textSize="17sp"></TextView>
 
             <CheckBox
                 android:id="@+id/tinggi"
-                android:layout_marginTop="25dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
                 android:text="Tinggi badan anak dibawah rata-rata anak seusianya"
                 android:textColor="#570D07"></CheckBox>
 
@@ -89,14 +90,14 @@
 
             <Button
                 android:id="@+id/proses"
-                android:textSize="15sp"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
                 android:padding="10dp"
                 android:text="PROSES"
                 android:textColor="#570D07"
-                android:layout_gravity="center_horizontal"
-                android:layout_marginTop="20dp"
-                android:layout_width="180dp"
-                android:layout_height="60dp"></Button>
+                android:textSize="15sp"></Button>
 
         </LinearLayout>
     </ScrollView>
